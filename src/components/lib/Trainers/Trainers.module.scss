@@ -26,7 +26,7 @@
       }
       .trainerText{
         position: absolute;
-        left: 0%;
+        left: 0;
         bottom: -55px;
         text-align: center;
         background: var(--white);
@@ -79,7 +79,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 916px) {
   .trainers .cards {
       justify-content: space-between;
     .card{
@@ -89,7 +89,7 @@
   }
 }
 
-@media screen and  (max-width: 576px) {
+@media screen and  (max-width: 700px) {
   .trainers {
     padding-bottom: 80px;
     .cards {
@@ -100,6 +100,9 @@
           left: 50%;
           transform: translateX(-50%);
           width: 282px;
+        }
+        &:hover .trainerText{
+          height: 260px;
         }
       }
     }
