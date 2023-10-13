@@ -1,0 +1,44 @@
+.about{
+  display: flex;
+  gap: 30px;
+  padding: 100px 0;
+  .videoContainer{
+    //width: 50%;
+  }
+  .video{
+    position: relative;
+    width: 100%;
+    img{
+      min-width: 100%;
+    }
+  }
+  .playBtn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-41.5px, -41.5px);
+  }
+  .info{
+    padding: 8px 0 0 40px;
+    h2{
+      font-size: 40px;
+      color: #111111;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .about{
+    flex-direction: column;
+    .video img{
+      width: 100%;
+    }
+    .info{
+      padding: 8px 0 0 0;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.training{
+  background-image: url(public/assets/banner-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-top: 65px;
+  .wrapper{
+    display: flex;
+    color: var(--white);
+  }
+  .trainingText{
+    width: 50%;
+    padding-top: 145px;
+    h2{
+      font-size: 40px;
+      color: var(--white);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 30px;
+      color: var(--white);
+      margin-bottom: 50px;
+    }
+  }
+  .trainingImg{
+    img{
+      vertical-align: middle;
+      border-style: none;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .wrapper{
+    flex-direction: column;
+    align-items: center;
+    .trainingText{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}
+

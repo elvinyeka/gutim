@@ -1,0 +1,127 @@
+.member {
+  padding: 100px 0 0;
+
+  .memberTitle {
+    margin-bottom: 55px;
+    text-align: center;
+    h2 {
+      color: #111111;
+      font-size: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  .memberItems{
+    display: flex;
+    gap: 30px;
+    .memberItem{
+      width: 32%;
+      text-align: center;
+      background: var(--white);
+      box-shadow: 0 15px 49px rgba(0, 0, 0, 0.15);
+      padding-bottom: 50px;
+      .itemTitle{
+        background: var(--gradient);
+        padding: 25px 0;
+        position: relative;
+        margin-bottom: 38px;
+        h4{
+          font-size: 24px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: var(--white);
+        }
+      }
+      .triangle{
+        &:after{
+          position: absolute;
+          left: 50%;
+          bottom: -14px;
+          width: 30px;
+          height: 15px;
+          transform: translateX(-15px);
+          clip-path: polygon(0% 0%, 50% 100%, 50% 100%, 100% 0%);
+          background: var(--gradient);
+          content: "";
+        }
+      }
+      .itemPrice{
+        font-size: 40px;
+        color: var(--orange);
+        font-weight: 600;
+        margin-bottom: 24px;
+        span{
+          font-size: 16px;
+          color: #6b6b6b;
+          font-weight: 400;
+        }
+      }
+      ul{
+        margin-bottom: 27px;
+        li{
+          list-style: none;
+          font-size: 16px;
+          line-height: 36px;
+          p{
+            margin-bottom: 0;
+            color: #6b6b6b;
+          }
+        }
+      }
+      .itemBtn{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 0 12px;
+        color: var(--dark);
+        text-align: center;
+        width: 160px;
+        height: 46px;
+        border-left: 2px solid #eb3c5a;
+        border-right: 2px solid #f67831;
+        box-sizing: border-box;
+        background-position: 0 0, 0 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 2px;
+        background-image: var(--gradient);
+        -webkit-transition-duration: 1000ms;
+        -o-transition-duration: 1000ms;
+        transition-duration: 1000ms;
+        line-height: 45px;
+        position: relative;
+        z-index: 1;
+        &:after{
+          color: #fff;
+          transition-duration: 500ms;
+          background: #f67831;
+          background: linear-gradient(to right, #eb3c5a, #f67831);
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          opacity: 0;
+        }
+        &:hover{
+          color: var(--white);
+        }
+        &:hover:after{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .member{
+    .memberItems{
+      flex-direction: column;
+      .memberItem{
+        width: 100%;
+      }
+    }
+  }
+}

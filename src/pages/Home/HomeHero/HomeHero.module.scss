@@ -1,0 +1,37 @@
+.hero{
+  height: 880px;
+  padding-top: 335px;
+  background-size: cover;
+  background: url("/public/hero-bg.webp") no-repeat top center;
+  .heroContent {
+    span{
+      font-size: 14px;
+      color: #f15d44;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+    h1{
+      font-size: 72px;
+      color: #ffffff;
+      font-weight: 600;
+      margin-top: 11px;
+      margin-bottom: 18px;
+    }
+    p{
+      color: #ffffff;
+      margin-bottom: 44px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .heroContent h1 {
+    font-size: 65px !important;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .heroContent h1 {
+    font-size: 45px !important;
+  }
+}

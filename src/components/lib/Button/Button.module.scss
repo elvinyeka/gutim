@@ -1,0 +1,30 @@
+.button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 12px;
+  color: #ffffff;
+  text-align: center;
+  width: 160px;
+  height: 46px;
+  border-left: 2px solid #eb3c5a;
+  border-right: 2px solid #f67831;
+  border-top: transparent;
+  border-bottom: transparent;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+  transition-duration: 1000ms;
+  line-height: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+//.button:hover {
+//  background-position: right center;
+//  /* change the direction of the change here */
+//  color: #fff;
+//  text-decoration: none;
+//}
+//
+//.button:active {
+//  transform: scale(0.95);
+//}

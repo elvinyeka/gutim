@@ -1,0 +1,14 @@
+.hero{
+  padding-top: 190px;
+  height: 400px;
+  background-size: cover;
+  background: url("/public/hero-bg.webp") no-repeat top center;
+  text-align: center;
+  .title{
+    font-size: 60px;
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}

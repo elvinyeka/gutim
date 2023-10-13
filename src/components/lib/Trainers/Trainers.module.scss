@@ -1,0 +1,107 @@
+.trainers{
+  background: #f5f5f5;
+  padding-top: 90px;
+  padding-bottom: 190px;
+  .trainersTitle{
+    text-align: center;
+    margin-bottom: 45px;
+    h2{
+      color: var(--dark);
+      font-size: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    //gap: 30px;
+    .card{
+      max-width: 31%;
+      position: relative;
+      background-color: var(--white);
+      img{
+        width: 100%;
+      }
+      .trainerText{
+        position: absolute;
+        left: 0%;
+        bottom: -55px;
+        text-align: center;
+        background: var(--white);
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15);
+        padding: 20px 30px 18px;
+        height: 90px;
+        transition: all 0.5s;
+        overflow: hidden;
+        h5{
+          font-size: 20px;
+          color: var(--dark);
+          font-weight: 600;
+          margin-bottom: 4px;
+        }
+        span{
+          font-size: 16px;
+          color: var(--orange);
+        }
+        p{
+          margin-top: 7px;
+          opacity: 0;
+          transition: all 0.3s;
+        }
+        .trainerSocial{
+          display: flex;
+          justify-content: center;
+          gap: 25px;
+          a{
+            display: inline-block;
+            font-size: 17px;
+            color: var(--dark);
+            transition: all 0.3s;
+            &:hover{
+              color: var(--orange);
+            }
+          }
+        }
+      }
+      &:hover .trainerText{
+        height: 250px;
+        bottom: -85px;
+        p{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .trainers .cards {
+      justify-content: space-between;
+    .card{
+      max-width: 48%;
+      margin-bottom: 110px;
+    }
+  }
+}
+
+@media screen and  (max-width: 576px) {
+  .trainers {
+    padding-bottom: 80px;
+    .cards {
+      justify-content: center;
+      .card{
+        max-width: 100%;
+        .trainerText{
+          left: 50%;
+          transform: translateX(-50%);
+          width: 282px;
+        }
+      }
+    }
+  }
+}

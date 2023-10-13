@@ -1,0 +1,50 @@
+.slider{
+  .sliderTitle{
+    text-align: center;
+    margin-bottom: 45px;
+    h2{
+      color: var(--dark);
+      font-size: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  .card {
+    height: 255px;
+    min-width: 31%;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    .text {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      color: var(--white);
+
+      h4 {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      span {
+        font-size: 14px;
+
+        i {
+          color: #e85d39;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
+
+
