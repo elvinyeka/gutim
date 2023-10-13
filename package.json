@@ -1,5 +1,5 @@
 {
-  "name": "kemex-front",
+  "name": "gutim-sport",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,16 +11,10 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
-    "@types/aos": "^3.0.4",
     "@types/react-countup": "^4.3.1",
-    "@types/swiper": "^6.0.0",
-    "aos": "^2.3.4",
-    "axios": "^1.4.0",
     "countup": "^1.8.2",
-    "dayjs": "^1.11.8",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "formik": "^2.4.1",
     "node": "^20.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,11 +22,7 @@
     "react-router-dom": "^6.11.2",
     "react-slick": "^0.29.0",
     "sass": "^1.62.1",
-    "slick-carousel": "^1.8.1",
-    "sonner": "^0.4.0",
-    "swiper": "^9.3.2",
-    "zod": "^3.21.4",
-    "zod-formik-adapter": "^1.2.0"
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^20.1.7",
