@@ -134,10 +134,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slick-next {
-  background: url("public/assets/next.svg") center center no-repeat!important;
+  background: url("/public/assets/next.svg") center center no-repeat!important;
   transition: all 0.3s ease-in-out;
 &:hover{
-  background: url("public/assets/nextOrange.svg") center center no-repeat!important;
+  background: url("/public/assets/nextOrange.svg") center center no-repeat!important;
 }
   &::before {
     display: none;
@@ -145,10 +145,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slick-prev {
-  background: url("public/assets/prev.svg") center center no-repeat!important;
+  background: url("/public/assets/prev.svg") center center no-repeat!important;
   transition: all 0.3s ease-in-out;
   &:hover{
-    background: url("public/assets/prevOrange.svg") center center no-repeat!important;
+    background: url("/public/assets/prevOrange.svg") center center no-repeat!important;
   }
 
   &::before {
