@@ -44,3 +44,25 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .blog{
+    .blogItems{
+      flex-wrap: wrap;
+      .blogItem{
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .blog{
+    .blogItems{
+      flex-wrap: wrap;
+      .blogItem{
+        width:100%;
+      }
+    }
+  }
+}
