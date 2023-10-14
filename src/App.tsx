@@ -1,8 +1,5 @@
 import { useEffect} from 'react'
 
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
 import Routing from '@/Routing.tsx'
 import Loader from '@/components/lib/Loader'
 import { useAppDispatch, useAppSelector } from '@/store/hooks'
@@ -17,7 +14,6 @@ function App() {
     setTimeout(() => {
       dispatch(setLoadApp(false))
     }, 1000)
-    AOS.init()
   }, [])
 
   return (
